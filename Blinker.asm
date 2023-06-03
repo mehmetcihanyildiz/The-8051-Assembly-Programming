@@ -1,0 +1,7 @@
+START:	CPL P1.0
+			ACALL WAIT
+			SJMP START
+			WAIT: 
+			MOV R0, #02H
+			DJNZ R0, $
+			RET
