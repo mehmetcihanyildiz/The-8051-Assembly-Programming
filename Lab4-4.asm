@@ -3,7 +3,7 @@
 
 MOV A, 20H	;save the value in RAM location 20H to A
 ADD A, 21H 	;add the value in RAM location 21H to A, the result is kept in A
-DA A 	;adjust for BCD form
+DA A 	      ;adjust for BCD form
 MOV R0, A 	;save result in R0
 MOV A, #00H 	;clear A
 ADDC A, 24H 	;add the carry to the high byte so that C=0 after this step
