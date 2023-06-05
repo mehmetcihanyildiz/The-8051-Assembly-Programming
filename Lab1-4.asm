@@ -3,9 +3,9 @@
 ;If not, put the value 80H into R6.
 
 BEGIN:	MOV A, R5
-			JNZ NOT
-			JZ  ZERO
-NOT:		MOV R6,#80H
-			SJMP BEGIN
+	JNZ NOT
+	JZ  ZERO
+NOT:	MOV R6,#80H
+	SJMP BEGIN
 ZERO:	MOV R5, #55H
-			SJMP BEGIN
+	SJMP BEGIN
