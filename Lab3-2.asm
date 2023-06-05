@@ -2,12 +2,12 @@
 ;First,turn P1.0 on and turn P1.6 off simultaneously. Then, turn P1.0 off and turn on P1.6.
 
 BEGIN:	CPL	P1.0
-			ACALL DELAY
-			CPL 	P1.0
-			CPL	P1.6
-			ACALL DELAY
-			CPL	P1.6
-			SJMP	BEGIN
+	ACALL DELAY
+	CPL 	P1.0
+	CPL	P1.6
+	ACALL DELAY
+	CPL	P1.6
+	SJMP	BEGIN
 DELAY:	MOV R0,#05H
-			DJNZ R0,$
-			RET
+	DJNZ R0,$
+	RET
