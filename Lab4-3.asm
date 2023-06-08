@@ -6,7 +6,7 @@
 ;   R5 R4
 ;   R7 R6
 ;-__________
-; 	  32H 33H
+;   32H 33H
 
 MOV A, R4 	;A=R4
 SUBB A, R6 	;A=R4-R6-C
